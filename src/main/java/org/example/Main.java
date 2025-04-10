@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -34,18 +36,18 @@ public class Main {
 
 
 
-//        Building house = new Building();
-//        house.year= 1976;
-//        house.floors = 5;
-//        house.flats = 60;
-//        house.type = "Plytinis";
-//
-//
-//        Building house2 = new Building();
-//        house2.year= 2024;
-//        house2.floors = 2;
-//        house2.flats = 4;
-//        house2.type = "Dujų silikato blokelių";
+        Building house = new Building();
+        house.year= 1976;
+        house.floors = 5;
+        house.flats = 60;
+        house.type = "Plytinis";
+
+
+        Building house2 = new Building();
+        house2.year= 2024;
+        house2.floors = 2;
+        house2.flats = 4;
+        house2.type = "Dujų silikato blokelių";
 //
 //        System.out.println(house.flatsPerFloor());
 //        System.out.println(house2.flatsPerFloor());
@@ -53,7 +55,6 @@ public class Main {
 //        System.out.println(house.buildingAge());
 //        System.out.println(house2.buildingAge());
 //
-////        employee.paySalary()
 //
 //        Car car = new Car();
 //        car.setManufacturer("peugeot");
@@ -61,6 +62,16 @@ public class Main {
 //        System.out.println(car.getManufacturer());
 //        System.out.println(car.getColor());
 //        car.pagaminimoMetai = "abrikosas";
+
+
+        ArrayList<Building> namai = new ArrayList<>();
+        namai.add(house);
+        namai.add(house2);
+        System.out.println(namai.get(0));
+
+        for (int i = 0; i < namai.size(); i++) {
+            System.out.println(namai.get(i));
+        }
 
 
         Elf elf = new Elf();
