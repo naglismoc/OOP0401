@@ -63,9 +63,15 @@ public class Main {
 //        car.pagaminimoMetai = "abrikosas";
 
 
+        Elf elf = new Elf();
+        elf.setTitle("Less legless lego legolass");
 
-
-
+        ForestElf felf = new ForestElf();
+        felf.setTame(70);
+        felf.setTitle("Galardiel");
+        felf.setInvisibility(0.8);
+        felf.makeASound();
+        System.out.println(felf);
 
 
 
